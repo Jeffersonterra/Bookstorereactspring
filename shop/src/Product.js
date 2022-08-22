@@ -38,7 +38,7 @@ export default function Product(props){
       <div>
       
         <button onClick={() =>{onAdd(product);clickHandler()}}>Adicione ao carrinho</button>
-        
+         {/*<button  className="red" onClick={() =>{aumentoestoque()}} >Remova do carrinho</button>*/} 
       </div>
     </div>
   );
