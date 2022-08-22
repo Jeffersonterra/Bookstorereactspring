@@ -1,36 +1,36 @@
 import React from 'react';
-import Product from './Product';
+
+
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+ 
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice  + shippingPrice;
+  
   return (
     <aside className="block row-2">
-      <h2>Cart Items</h2>
+      <h2>Carrinho de Compras</h2>
       <div>
         {cartItems.length === 0 && <div>Carrinho Vazio</div>}
         {cartItems.map((item) => (
           <div key={item.id} >
             <div className="col-2">{item.name}</div>
             <div className="col-2">
-              <button onClick={() => onRemove(item)} className="remove">
+              <button onClick={() => {onRemove(item)}} className="remove">
                 -
               </button>{' '}
               <button onClick={() => onAdd(item)} className="add">
                 +
               </button>
+              
             </div>
 
             <div className="col-2 text-right">
               {item.qty} x ${item.price.toFixed(2)}
             </div>
-           {/*  <div className="col-2 text-right">
-              {item.qty} x ${Product.stock}
-            </div>
-            */}
-           
+            
           </div>
         ))}
 
@@ -38,12 +38,12 @@ export default function Basket(props) {
           <>
             <hr></hr>
             <div className="row">
-              <div className="col-2">Items Price</div>
+              <div className="col-2">Valor item</div>
               <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
             </div>
-            
+           
             <div className="row">
-              <div className="col-2">Shipping Price</div>
+              <div className="col-2">Valor Frete</div>
               <div className="col-1 text-right">
                 ${shippingPrice.toFixed(2)}
               </div>
@@ -59,7 +59,7 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert('Obrigado pela compra!')}>
+              <button onClick={() => alert('Obrigado pela compra!')} >
                 Finalizar
               </button>
             </div>
