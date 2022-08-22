@@ -1,0 +1,70 @@
+const data = {
+  products: [
+    {
+      id: '1',
+      name: 'Assim Que Acaba',
+      price: 14,
+      image: 'https://images-na.ssl-images-amazon.com/images/I/51i7kH+rh9L._SX322_BO1,204,203,200_.jpg',
+      author: 'Collen Hoover',
+      editor: 'Record',
+      stock: 2,
+    },
+    {
+      id: '2',
+      name: 'O Cortiço',
+      price: 24,
+      image: 'https://i.pinimg.com/originals/37/a1/8d/37a18db6824d5e1796d5e4e5d059bee7.jpg',
+      author: 'Aluiso Azevedo',
+      editor: 'Ciranda Cultural',
+      stock: 4,
+    },
+    {
+      id: '3',
+      name: 'O labirinto do Fauno',
+      price: 37,
+      image: 'https://th.bing.com/th/id/R.567ddee1223475bff4a111202136ce21?rik=sfq4Ertx8AFYag&pid=ImgRaw&r=0',
+      author: 'Guillermo del Toro',
+      editor: 'Intriseca',
+      stock: 3,
+    },
+    {
+      id: '4',
+      name: 'Harry Potter',
+      price:120,
+      image:'https://th.bing.com/th/id/R.a22c9d8e39dbb13fc0fa5c3e2aa56b26?rik=%2b75pw5viG6Ysug&riu=http%3a%2f%2fanimagos.com.br%2fwp-content%2fuploads%2f2017%2f07%2flivro-01_capa.jpg&ehk=E7dRUm7YN6OjXlFM7q6QZbXLZKP9nzwih%2b06I5dL2aM%3d&risl=&pid=ImgRaw&r=0',
+      author: 'J.K. Rowling',
+      editor: 'Rocco',
+      stock: 14,
+    },
+    {
+      id: '5',
+      name: '1984',
+      price: 94,
+      image: 'https://img.wook.pt/images/1984-george-orwell/MXwyNDQ1NjU3N3wyMDU0NjQxMHwxNjA5ODA0ODAwMDAw/500x',
+      author: 'George Orwell',
+      editor: 'Ciranda Cultural',
+      stock: 8,
+    },
+    {
+      id: '6',
+      name: 'Anne da Ilha',
+      price: 80,
+      image: 'https://trecobox.com.br/wp-content/uploads/2020/08/Anne-da-Ilha-Capa-livro.jpg',
+      author: 'L.M. Montgomery',
+      editor: 'Ciranda Cultural',
+      stock: 11,
+    },
+    {
+      id: '7',
+      name: 'Capitaes de Areia',
+      price: 40,
+      image: 'https://1.bp.blogspot.com/_UO57gmPaeEc/TPmcFvi7GYI/AAAAAAAAADw/jCXbX7MhsYo/s1600/capitaes_da_areia.jpg',
+      author: 'Jorge Amado',
+      editor: 'Schwarcz',
+      stock: 7,
+    },
+  
+   
+  ],
+};
+export default data;
